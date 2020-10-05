@@ -2,9 +2,6 @@ extends partials/base.pug
 
 block pageSpecificCSS
 
-block header
-  include partials/header.pug
-
 block content
   div(class='row')
     div(class='col-md-12')
@@ -12,7 +9,7 @@ block content
   hr
 
   div(class='row')
-    div(class='col-md-12 text-center') 
+    div(class='col-md-12 text-center')
       a(href='/logout') Logout
 
 block pageSpecificScripts
