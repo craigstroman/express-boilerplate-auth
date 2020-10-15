@@ -40,5 +40,9 @@ export const login = (req, res) => {
 export const logout = (req, res) => {
   req.logout();
 
-  res.redirect('/logout');
+  res.render('logout', {
+    title: req.app.locals.title,
+    content: req.app.locals.content,
+    path: req.path,
+  });
 };
